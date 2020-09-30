@@ -82,7 +82,7 @@ button:disabled:hover{
     transition: width 5s, height 4s;
     left: 55px;
     bottom: 25px;
-    animation: extender 2s;
+    animation: extender 1.5s;
     animation-fill-mode: forwards;
 }
 
