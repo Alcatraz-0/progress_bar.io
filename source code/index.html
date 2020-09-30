@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step Progress Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header"><h1>Progress Bar</h1></div>
+    <div class="container">
+      <div id="ProgressBar">
+        <div class="step">
+          <p class="step-text">Step 1</p>
+          <div class="bullet">A</div>
+        </div>
+        <div class="step">
+          <p class="step-text">Step 2</p>
+          <div class="bullet">B</div>
+        </div>
+        <div class="step">
+          <p class="step-text">Step 3</p>
+          <div class="bullet">C</div>
+        </div>
+        <div class="step">
+          <p class="step-text">Step 4</p>
+          <div class="bullet">D</div>
+        </div>
+      </div>
+      <div id="main" class="main">
+        <p id="content">Step Number 1</p>
+        <button id="previous" disabled>Previous</button>
+        <button id="next">Next</button>
+        <button id="finish" disabled>Complete</button>
+      </div>
+    </div>
+    <script src="script_progressbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+.hidden{
+    display: none;
+}
+
+.main{
+    margin:auto;
+    padding-left: 800px;
+}
+
+button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    transition: 850ms background-color;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button:disabled:hover{
+    opacity: 0.6;
+    cursor: not-allowed;
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    color: white;
+    max-width: 4000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+#ProgressBar{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.step{
+    text-align: center; 
+}
+
+.step-text{
+    margin-bottom: 10px;
+    color: #616161;
+}
+
+.bullet{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid #616161;
+    color: #616161;
+    display: inline-block;
+    position: relative;
+    transition: background-color 750ms;
+    line-height: 50px;
+    text-align: center;
+}
+
+.bullet.completed{
+    color: white;
+    background-color: #616161;
+    
+}
+
+.bullet.completed::after {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    width: 0px;
+    background-color: #616161;
+    transition: width 5s, height 4s;
+    left: 55px;
+    bottom: 25px;
+    animation: extender 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes extender {
+    100% {
+      width: 250px;
+    }
+  }
+
+
+.header {
+    padding: 20px;
+    margin-top: 5px;
+    text-align: center;
+    background: #212121;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 2px  gainsboro;
+  }
